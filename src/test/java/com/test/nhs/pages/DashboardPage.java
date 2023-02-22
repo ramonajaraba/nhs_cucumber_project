@@ -20,7 +20,6 @@ public class DashboardPage {
 
     //==============================  elements =============================================
 
-
     @FindBy(css = ".panel-heading") // if not working use //div[@class='panel-heading']//div[@class='row']
     List<WebElement> allCards;
     //font-size: 14px; same for image and text, but not numbers
@@ -30,7 +29,6 @@ public class DashboardPage {
 
     @FindBy(xpath = "//div[@class='huge']/following-sibling::div")
     List<WebElement> allCardTitles;
-
 
     //==============================  methods =============================================
 
