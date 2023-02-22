@@ -12,7 +12,6 @@ public class DashboardStepDefinition {
     WebDriver driver = DriverHelper.getDriver();
     DashboardPage dashboardPage = new DashboardPage(driver);
 
-
     @Then("user sees {int} cards")
     public void user_sees_cards(Integer expectedCardsNr) {
         Assert.assertEquals(expectedCardsNr, dashboardPage.numberOfCards());
@@ -25,13 +24,11 @@ public class DashboardStepDefinition {
         Assert.assertTrue(dashboardPage.cardsHaveSameY());
     }
 
-
     @Then("user validates the cards have positive numbers")
     public void user_validates_the_cards_have_positive_numbers() {
 //        System.out.println(dashboardPage.getCardNumbersText());
         Assert.assertTrue(dashboardPage.cardNumberIsNumeric());
     }
-
 
     @Then("user validates the cards with {string} have the expected title {string}")
     public void user_validates_the_cards_with_have_the_expected_title(String cardIndex, String expectedCardTitle) {
@@ -43,9 +40,6 @@ public class DashboardStepDefinition {
 //    public void user_validates_the_cards_with_have_the_expected_color(String string, String string2) {
 //
 //    }
-
-
-
 
 
 

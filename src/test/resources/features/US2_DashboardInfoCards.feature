@@ -12,7 +12,13 @@ Feature: Dashboard page cards
   Scenario: Dashboard cards have numbers
     Then user validates the cards have positive numbers
 
-
+  Scenario Outline: Dashboard cards have the right text
+    Then user validates the cards with '<cardIndex>' have the expected title '<value>'
+    Examples:
+      | cardIndex | value               |
+      | 1         | Patients with rooms |
+      | 2         | Patients waiting    |
+      | 3         | Free rooms          |
 
 
 #  Scenario Outline:   Dashboard cards have the right background color
@@ -33,13 +39,6 @@ Feature: Dashboard page cards
 #      | 3         | hospital |
 #
 ##
-  Scenario Outline: Dashboard cards have the right text
-    Then user validates the cards with '<cardIndex>' have the expected title '<value>'
-    Examples:
-      | cardIndex | value               |
-      | 1         | Patients with rooms |
-      | 2         | Patients waiting    |
-      | 3         | Free rooms          |
 
 #
 
