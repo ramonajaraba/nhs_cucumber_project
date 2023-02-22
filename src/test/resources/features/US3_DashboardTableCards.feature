@@ -1,4 +1,5 @@
 Feature: Dashboard page cards: US2, US3
+
   Acceptance criteria:
   - Landing Page:
   - title: LoginPage,
@@ -9,10 +10,8 @@ Feature: Dashboard page cards: US2, US3
   - Home Page:
   - title: NHS patients
   - url: http://www.techtorialacademy.link/app
-
   - Home page has accessible: hospital information, health information, and manage the rooms
   -3 table cards
-
   - Table card 1:
   - titles: no., Patients with rooms, Room, Score(by default - descending order)
 
@@ -33,5 +32,6 @@ Feature: Dashboard page cards: US2, US3
 
   Scenario: Table is sorted by default
     Then user validates table is sorted by default by column 4 in 'descending' order
-#    Then user validates the table 1 values from column 1 are in 'descending' order
+    Then user validates the table 1 values from column 1 are in 'descending' order
+
 
