@@ -39,13 +39,11 @@ public class LoginStepDefinition {
 
     @When("user login with credentials {string} and {string}")
     public void user_enters_correct_and(String username, String password) throws InterruptedException {
-
         loginPage.login(username,password);
     }
 
     @Then("user validates page title {string} and url {string}")
     public void user_validates_page_title_and_url(String expectedTitle, String expectedUrl) {
-
         Assert.assertEquals(expectedTitle, driver.getTitle());
         Assert.assertEquals(expectedUrl, driver.getCurrentUrl());
     }

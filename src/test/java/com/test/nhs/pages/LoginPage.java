@@ -26,12 +26,10 @@ public class LoginPage {
     //==================================== methods ================================================
 
     public String usernameIsRequired(){
-
         return password.getAttribute("required");
     }
 
     public String passwordIsRequired(){
-
         return password.getAttribute("required");
     }
 
